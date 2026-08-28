@@ -1,0 +1,28 @@
+export const ItemsData=[{
+    item_img:"/Images/DisplayItems/Biryani.avif",
+},
+{
+    item_img:"/Images/DisplayItems/Bonda.avif",
+},
+{
+    item_img:"/Images/DisplayItems/Cakes.avif",
+},{
+    item_img:"/Images/DisplayItems/coffee.avif",
+},{
+    item_img:"/Images/DisplayItems/Dosa.avif",
+},{
+    item_img:"/Images/DisplayItems/idly.avif",
+},{
+    item_img:"/Images/DisplayItems/Juice.avif",
+},{
+    item_img:"/Images/DisplayItems/poori.avif",
+},{
+    item_img:"/Images/DisplayItems/Salad.avif",
+},{
+    item_img:"/Images/DisplayItems/Tea.avif",
+},{
+    item_img:"/Images/DisplayItems/Upma.avif",
+},{
+    item_img:"/Images/DisplayItems/Vada.avif",
+},
+]
