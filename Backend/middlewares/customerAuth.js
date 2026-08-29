@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
 const dotEnv = require("dotenv");
-const Customer = require("../models/customer");
+const Customer = require("../models/Customer");
 
 dotEnv.config();
 
