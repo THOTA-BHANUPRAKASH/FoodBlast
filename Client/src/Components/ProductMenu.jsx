@@ -3,7 +3,7 @@ import { useContext, useEffect, useState } from "react";
 import { API_URL } from "../api";
 import { useParams } from "react-router-dom";
 import NavBar from "./NavBar";
-import { CartContext } from "../context/cartContext";
+import { CartContext } from "../context/CartContext";
 
 const ProductMenu = () => {
   const [products, setProducts] = useState([]);
