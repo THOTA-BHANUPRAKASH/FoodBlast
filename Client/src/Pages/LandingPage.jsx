@@ -1,5 +1,5 @@
 import NavBar from "../Components/NavBar";
-import SearchResults from "../Components/SearchResults";
+import SearchResults from "../Components/searchResults";
 import DisplayItems from "../Components/DisplayItems";
 import ChainRestaurant from "../Components/ChainRestaurant";
 import FirmCollections from "../Components/FirmCollections";
