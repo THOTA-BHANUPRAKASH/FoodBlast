@@ -2,11 +2,11 @@ import LandingPage from "./Pages/LandingPage";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import ProductMenu from "./Components/ProductMenu";
-import CartProvider from "./context/CartContext";
+import CartProvider from "./context/cartContext";
 import Cart from "./Components/Cart";
 import CustomerLogin from "./Pages/CustomerLogin";
 import AuthProvider from "./context/AuthContext";
-import CustomerRegister from "./Pages/customerRegister";
+import CustomerRegister from "./Pages/CustomerRegister";
 
 const App = () => {
   return (
