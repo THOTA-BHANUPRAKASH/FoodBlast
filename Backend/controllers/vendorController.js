@@ -42,9 +42,20 @@ const vendorLogin = async (req, res) => {
     const token = jwt.sign({ vendorId: vendor._id }, secretkey, {
       expiresIn: "1d",
     });
-    res.cookie("token", token);
+    res.cookie("token", {
+      httpOnly: true,
+      secure: true,
+      sameSite: "none",
+      maxAge: 24 * 60 * 60 * 1000,
+    });
 
-    res.status(200).json({ sucess: "Login Sucessfully", token });
+    res.status(200).json({
+      success: "Login Successfully",
+      vendor: {
+        id: vendor._id,
+        username: vendor.username,
+      },
+    });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: "Internal server error" });
@@ -52,7 +63,12 @@ const vendorLogin = async (req, res) => {
 };
 
 const vendorLogout = (req, res) => {
-  res.clearCookie("token");
+  res.clearCookie("token", {
+    httpOnly: true,
+    secure: true,
+    sameSite: "none",
+  });
+
   res.status(200).json({
     success: "Logout Successfully",
   });
