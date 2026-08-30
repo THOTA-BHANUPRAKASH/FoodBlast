@@ -15,7 +15,7 @@ const cookieParser = require("cookie-parser");
 const app = express();
 app.use(
   CORS({
-    origin: ["http://localhost:9999", "http://localhost:4444","https://food-blast-client.vercel.app/","https://food-blast-frontend.vercel.app/"],
+    origin: ["http://localhost:9999", "http://localhost:4444","https://food-blast-client.vercel.app","https://food-blast-frontend.vercel.app"],
     credentials: true,
   }),
 );
