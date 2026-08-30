@@ -360,9 +360,59 @@ textarea {
 }
 
 .userAuth {
-    display: flex;
-    gap: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+
+/* Common button styling */
+.userAuth button {
+  border: none;
+  padding: 9px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Login button */
+.userAuth button:first-child {
+  background: transparent;
+  color: #ff6b35;
+  border: 1.5px solid #ff6b35;
+}
+
+.userAuth button:first-child:hover {
+  background: #ff6b35;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Register button */
+.userAuth button:nth-child(2) {
+  background: #ff6b35;
+  color: white;
+}
+
+.userAuth button:nth-child(2):hover {
+  background: #e85a28;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+/* Logout button */
+.userAuth button:only-child {
+  background: #dc3545;
+  color: white;
+}
+
+.userAuth button:only-child:hover {
+  background: #bb2d3b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(220, 53, 69, 0.25);
+}
+
 
 -------NotFoundPage------
 .notFoundPage {
