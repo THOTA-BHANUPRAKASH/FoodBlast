@@ -85,8 +85,8 @@ const customerLogin = async (req, res) => {
 
     res.cookie("customerToken", token, {
       httpOnly: true,
-      secure: false,
-      sameSite: "lax",
+      secure: true,
+      sameSite: "none",
       maxAge: 24 * 60 * 60 * 1000,
     });
 
@@ -139,8 +139,8 @@ const customerLogout = (req, res) => {
   try {
     res.clearCookie("customerToken", {
       httpOnly: true,
-      secure: false,
-      sameSite: "lax",
+      secure: true,
+      sameSite: "none",
     });
 
     res.status(200).json({
